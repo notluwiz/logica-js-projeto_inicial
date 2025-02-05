@@ -1,5 +1,5 @@
 alert('Boas vindas ao jogo do número secreto!');
-let numeroSecreto = 10;
+let numeroSecreto = 5;
 console.log(numeroSecreto)
 let chute = prompt('Escolha um número de 1 a 10.')
 
@@ -7,6 +7,10 @@ let chute = prompt('Escolha um número de 1 a 10.')
 if (chute == numeroSecreto) {
      alert(`Você acertou o núemro secreto! ${numeroSecreto}`);
 } else {
-    alert('Você errou.');
+    if (chute > numeroSecreto) {
+        alert(`O numero srecreto é menor que ${chute}`);
+    } else {
+        alert(`Seu numero secreto é maior que ${chute} `)
+    }
 }
 
