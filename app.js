@@ -13,20 +13,26 @@ while (chute != numeroSecreto) {
     if (chute == numeroSecreto) {
         break;
     } else {
-        if (chute > numeroSecreto) {
-            alert(`Seu numero secreto é menor que ${chute}`);
-        } else {
-            alert(`Seu numero secreto é maior que ${chute}`);
-        }
-        // tentativas = tentativas + 1;
-        tentativas++;
+    if (chute > numeroSecreto) {
+        alert(`Seu numero secreto é menor que ${chute}`);
+    } else {
+        alert(`Seu numero secreto é maior que ${chute}`);
     }
+    // tentativas = tentativas + 1;
+    tentativas++;
+     }
 }
 
-if (tentativas > 1) {
-    alert(`Você acertou o núemro secreto ${numeroSecreto}! com ${tentativas} tentativas.`);
-} else {
-    alert(`Você acertou o núemro secreto ${numeroSecreto}! com ${tentativas} tentativa.`);
-}
+
+let palavraTentaiva = tentativas > 1 ? 'tentativas' : 'tentativa'
+alert(`Você acertou o núemro secreto ${numeroSecreto}! com ${tentativas} ${palavraTentaiva}.`);
+
+// if (tentativas > 1) {
+//      alert(`Você acertou o núemro secreto ${numeroSecreto}! com ${tentativas} tentativas.`);
+// } else {
+//      alert(`Você acertou o núemro secreto ${numeroSecreto}! com ${tentativas} tentativa.`);
+// }
+
+
 
 
